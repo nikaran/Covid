@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid19-CAP</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/validation.js"></script> 
+  </head>  
+  
+  <body class="size-1140">    
+      <!-- Top Navigation -->
+      <nav class="background-white background-primary-hightlight">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="index.html" class="logo"><img src="img/logo-free.png" alt=""></a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li><a href="index.html">Home</a></li>
+              <li><a>Services</a>
+                <ul>
+                  <li><a href="gr.html">Groceries Delivery</a>
+                  </li>
+                  <li><a href="medi.html">Medical Assistance</a></li>
+                </ul>
+              </li>
+              <li><a href="bb.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main">  
+
+
+
+  <div >
+	<table cellspacing="0" cellpadding="0" width="100%" border="0">
+	<tr>
+	<td width="75%" valign="top"> 
+		<table cellspacing="10" cellpadding="15" width="98%" border="0" style="font-size:16px" ><tr>
+<td align="left" valign="top" ><center>
+<b>Registration allowed only from 8 AM to 11 AM and  3 PM to 5 PM</b>
+</center></td></tr>  
+		
+		
+		<tr><td style="text-align:justify" valign="top"> 
+	<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                   
+                     
+                    <tr>
+
+                      <td align="left" valign="top" class="innerContentMidRight"><center>
+                        EMERGENCY TRAVEL PASS
+                      </center>
+					  <form id="frm_vmaster" name="frm_vmaster"  action="http://covid19.chennaicorporation.gov.in/c19/travel_pass/travel_reg_add.jsp"   method="post"  enctype="multipart/form-data" >
+					<center>
+					<table width="85%" cellpadding="4" cellspacing="0" border="1">
+                      <tr>
+                        <td colspan="4" align='left' >&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                          <input type="radio" name="rd_mov" id="rd_mov" value="1" checked="checked" onClick="fn_mvt()"> Men Movement   &nbsp; &nbsp; &nbsp;
+                      <input type="radio" name="rd_mov" id="rd_mov" value="2" onClick="fn_mvt()" style="display:none;"  ><!-- Essential Commodities   -->                   </td></tr>
+                      <tr id="tr_men" name="tr_men"  >
+                        <td width="39%"  align='left' ><strong>Travel To </strong></td>
+                        <td width="2%"  align='center' ><b>:</b></td>
+                        <td colspan="2"><input type="radio" name="rd_tvl" id="rd_tvl" value="1"> Inter State  &nbsp; &nbsp; &nbsp; 
+						<input type="radio" name="rd_tvl" id="rd_tvl" value="2">Inter-District  &nbsp; &nbsp; &nbsp;
+						<input type="radio" name="rd_tvl" id="rd_tvl" value="3">Within District				</td>
+                      </tr>
+                      <tr id="tr_est" name="tr_est"  style="display:none;" >  
+                        <td align='left'   valign="top"><strong>Items</strong> </td>
+                        <td align='center'   valign="top">:</td>
+                        <td colspan="2"><textAREA tabindex="1" WIDTH=100 ROWS=5 cols="50"  HEIGHT=100 SIZE=100 name='txt_est' id='txt_est' onKeyPress="return isSpecialChrs()"> </textAREA></td>
+                      </tr>
+                      <tr>
+                        <td align='left'  valign="top"><strong>Reason for seeking  Emergency Pass</strong></td>
+                        <td align='center'   valign="top"><strong>:</strong></td>
+                        <td width="48%" colspan="2"><select id="cb_seek" name="cb_seek" tabindex='2'    style="width:17em"    >
+                          <option value='0'>Select</option> <option value='D' >Death of Direct Blood Relation </option> <option value='M' >Pre-Fixed Marriage (Only Bride, Bridegroom & direct blood relations of bride/bridegroom allowed)</option> <option value='T' >Medical Emergency</option>
+                        </select></td>
+                      </tr>
+                      
+                      <tr>
+                        <td align='left' valign="top" ><strong>Description</strong></td>
+                        <td align='center' valign="top" ><strong>:</strong></td>
+                        <td colspan="2">
+						 
+						<textAREA  WIDTH=100 ROWS=5 cols="50"  HEIGHT=100 SIZE=100  name="txt_dsg" id="txt_dsg" maxlength="100"   onKeyPress="return isSpecialChrs()" ></textAREA>						</td>
+                      </tr>
+                      <tr>
+                        <td align='left' ><strong>Reason For Travel </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2"><input type="radio" id="rd_reas"  name="rd_reas" value="D" onClick="fn_chk_dte()" >
+                          Death
+                          
+      <input type="radio" id="rd_reas"  name="rd_reas" value="M" onClick="fn_chk_dte()" >  
+                          Marriage
+                          <input type="radio" id="rd_reas"  name="rd_reas" value="T" onClick="fn_chk_dte()" > 
+                          Treatment
+                                                  </td>
+                      </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong>Death/Marriage Date </strong></td>
+                        <td align='center'  valign="top" ><strong>:</strong></td>
+                        <td colspan="2" valign="top"><input type="date" name="txt_evt_dte" id="txt_evt_dte" min="2020-04-28" max="2020-05-03"  onChange="return ch_date_val()" ></td>
+                      </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong>Date Of Travel </strong></td>
+                        <td align='center'  valign="top" ><strong>:</strong></td>
+                        <td colspan="2" valign="top">
+						<input type="date" name="txt_dte" id="txt_dte" min="2020-04-28" max="2020-05-03"  onChange="return ch_date_val()" > 
+                          &nbsp;</td>
+                      </tr>
+                      
+                      <tr>
+                        <td align='left' > <strong>Reason For Seeking Emergency Pass - Document Proof</strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2"><input type="File" name="fle_reason" id="fle_reason" accept="application/pdf" onClick="return ch_date_val()">
+                          &nbsp;</td>
+                      </tr>
+                      
+                      <tr>
+                        <td align='left'  valign="top"><b>Zone </b></td>
+                        <td align='center'   valign="top"><b> :</b></td>
+                        <td colspan="2"><select id="cb_zn" name="cb_zn" tabindex='3'    style="width:17em"    >
+                            <option value='0'>Select</option> <option value='18872' >N01</option> <option value='18873' >N02</option> <option value='18874' >N03</option> <option value='18875' >N04</option> <option value='18876' >N05</option> <option value='18877' >N06</option> <option value='18878' >N07</option> <option value='18879' >N08</option> <option value='18880' >N09</option> <option value='18881' >N10</option> <option value='18882' >N11</option> <option value='18883' >N12</option> <option value='18885' >N13</option> <option value='18884' >N14</option> <option value='18886' >N15</option>
+                        </select></td>
+                      </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong> Name </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2" valign="top"><input type="text" tabindex="4" size=40 maxlength="100" name='txt_name' id='txt_name'   style="width:17em" onKeyPress="  return isSpecialChrs(event) == true && isChars(event)==true "  ></td> 
+                      </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong>Gender</strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2" valign="top">
+						<input type="radio" name="rd_gend" id="rd_gend" value="M"  > Male &nbsp; &nbsp; 
+						<input type="radio" name="rd_gend" id="rd_gend" value="F"> Female&nbsp; &nbsp; &nbsp; &nbsp;
+						<input type="radio" name="rd_gend" id="rd_gend" value="T"> 
+						Transgender  
+						&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong>Age</strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2" valign="top"><input type="text" tabindex="5" size=40 maxlength="3" name='txt_age' id='txt_age'   style="width:17em" onKeyPress="return isNumber(event)" ></td>
+                      </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong>Mobile Number </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2" valign="top"><input type="text" tabindex="6" size=40 maxlength="10" name='txt_mob' id='txt_mob'   style="width:17em"  onBlur="fn_chk_mob(this.value)" onKeyPress="return isNumber(event)" >
+                            <div id="div_mob" ></div></td>
+                      </tr>
+                      <tr>
+                        <td align='left' ><strong>Email-ID</strong> </td>
+                        <td align='center' ><b>:</b></td>
+                        <td colspan="2"><input type="text" id="txt_email" name="txt_email" maxlength="50"></td>
+                      </tr>
+                      
+                      <tr>
+                        <td  align='left' valign="top" ><b> Address </b></td>
+                        <td align='center'  valign="top" ><b> :</b></td>
+                        <td colspan="2" valign="top"><textAREA tabindex="7" WIDTH=100 ROWS=5 cols="50"  HEIGHT=100 SIZE=100 name='txt_address' id='txt_address'  onKeyPress="return isSpecialChrs()"></textAREA></td>
+                      </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong>Address Proof Enclosed</strong> </td>
+                        <td align='center' ><b>:</b></td>
+                        <td colspan="2" valign="top"><input type="File" name="fle_addr_prf" id="fle_addr_prf" accept="application/pdf"></td>
+                      </tr>
+                      
+                      <tr>
+                        <td colspan="4"  align='left' valign="top" ><strong>Destination Details</strong></td>
+                        </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong>Village<br>
+                        </strong></td>
+                        <td align='center' ><b>:</b></td>
+                        <td colspan="2" valign="top"><input type="text" tabindex="8" size=40 maxlength="100" name='txt_vlg' id='txt_vlg'   style="width:17em"  onKeyPress="return isSpecialChrs()"  ></td>
+                      </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong>Taluk<br>
+                        </strong></td>
+                        <td align='center' ><b>:</b></td>
+                        <td colspan="2" valign="top"><input type="text" tabindex="9" size=40 maxlength="100" name='txt_taluk' id='txt_taluk'   style="width:17em"  onKeyPress="return isSpecialChrs()"  ></td>
+                      </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong>District <br>
+                        </strong></td>
+                        <td align='center' ><b>:</b></td>
+                        <td colspan="2" valign="top"><input type="text" tabindex="10" size=40 maxlength="100" name='txt_dst' id='txt_dst'   style="width:17em"   onKeyPress="return isSpecialChrs()" ></td>
+                      </tr>
+                      <tr>
+                        <td  align='left' valign="top" ><strong>State</strong></td>
+                        <td align='center' ><b>:</b></td>
+                        <td colspan="2" valign="top"><input type="text" tabindex="11" size=40 maxlength="100" name='txt_state' id='txt_state'   style="width:17em" onKeyPress="return isChars(event)" ></td>
+                      </tr>
+                      <tr>
+                        <td align='left' ><strong>Number Of Vehicle  </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2">1<input type="hidden" tabindex="12" size=40 maxlength="2" name='txt_no_vch' id='txt_no_vch'   style="width:17em"  onKeyPress="return isNumber(event)" readonly="" value="1"  ></td>
+                      </tr>
+                      <tr>
+                        <td align='left' ><strong>Vehicle </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2">
+						<input type="radio" name="rd_veh_type" id="rd_veh_type" value="T"    tabindex="13" onClick="fn_rd_veh_type()">Two Wheeler &nbsp; &nbsp;
+						<input type="radio" name="rd_veh_type" id="rd_veh_type"  tabindex="14" value="F"  onClick="fn_rd_veh_type()"> Four Wheeler</td>
+                      </tr>
+                      <tr>
+                        <td align='left'  valign="top"><strong>Seating Capacity</strong></td>
+                        <td align='center' >&nbsp;</td>
+                        <td colspan="2">
+						<input type="radio" tabindex="15" name='rd_seat_cap' id='rd_seat_cap' value="4"> 4 Seats
+						<input type="radio" tabindex="16" name='rd_seat_cap' id='rd_seat_cap' value="7"> 
+						7 Seats
+						</td>
+                      </tr>
+                      <tr>
+                        <td align='left'  valign="top"><strong>Vehicle Name and Model </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2"><textAREA tabindex="17" WIDTH=100 ROWS=5 cols="50"  HEIGHT=100 SIZE=100 name='txt_veh_typ' id='txt_veh_typ'  onKeyPress="return isSpecialChrs()"></textAREA></td>
+                      </tr>
+                      <tr>
+                        <td align='left' ><strong>Vehicle Number<br>
+                        </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2"><input type="text" tabindex="18" size=40 maxlength="10" name='txt_vch_no' id='txt_vch_no'   style="width:17em"   onKeyPress="return isSpecialChrs()" onBlur="fn_chk_vcl_no()" ></td>
+                      </tr>
+                     
+                      <tr>
+                        <td align='left' ><strong>Number Of Persons Travel </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2"><input type="text" tabindex="19" size=40 maxlength="3" name='txt_no_pers' id='txt_no_pers' title="Press Tab Key . Grid will display" style="width:17em"  onBlur="fn_add_row()"  onKeyPress="return isNumber(event)"   ></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4" align='left' >
+						<table id="tbl_rels" name="tbl_rels" cellpadding="5" cellspacing="0" border='1'>
+						<tr valign="top" style="text-transform:capitalize">
+						<td><strong>Slno</strong></td>
+						<td><strong>Name</strong></td>
+						<Td><strong> Age </strong></Td>
+						<td><strong>Relationship With the Deceased Person/Bride or Bridegroom/Patient</strong></td>
+						<td><strong> ID Proof</strong></td>
+						<td><strong> ID Proof Number</strong></td>
+						<td><strong>ID Proof File</strong></td>
+						</tr>
+						</table>						 </td>
+                        </tr>
+                      
+                      <tr>
+                        <td align='left' ><strong>ID Proof </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2"><select name="cb_id_proof" id="cb_id_proof"     style="width:17em" >
+                            <option value='0'>Select</option> <option value='1' >ADHAR</option> <option value='2' >PAN CARD</option>
+                          </select>                        </td>
+                      </tr>
+                      <tr>
+                        <td align='left' ><strong>ID Proof Number </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2"><input type="text" tabindex="20" size=40 maxlength="20" name='txt_id_proof_vale' id='txt_id_proof_vale'   onKeyPress="return isSpecialChrs()"   style="width:17em"  ></td>
+                      </tr>
+                      <tr>
+                        <td align='left' ><strong>ID Proof File </strong></td>
+                        <td align='center' ><strong>:</strong></td>
+                        <td colspan="2"><input type="File" name="fle_id_prf" id="fle_id_prf" accept="application/pdf">&nbsp;</td>
+                      </tr>
+                      
+                      <tr>
+                        <td colspan='4' align='center' >
+						                           &nbsp;&nbsp;
+                        <input name="reset" type="reset" style="color: #0000FF; font-family: Book Antiqua; font-size: 12pt; font-style: italic; font-weight: bold" tabindex='21' value="Clear" >	
+				<span style="text-align:left;">		<br>
+				Note : All Fields are Mandatory</span>	                  </td></tr>
+                    </table>
+					</center>
+					</form></td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top" class="innerContentMidRight">&nbsp;</td>
+                    </tr>
+                  </table>
+	<h2>&nbsp;</h2>
+				</td></tr></table>
+	
+</table>
+  </div>
+</body>
+
+<script>
+	function fn_get_div(zn)
+		{
+		call_div(zn)
+		}
+		
+</script>		
+<script>
+function Validate()
+{
+if ( document.getElementById("txt_evt_dte").value.length<6 && ( frm_vmaster.rd_reas[0].checked==true || frm_vmaster.rd_reas[1].checked==true)  ) 
+	{ alert("Please Enter Marriage / Death Date    "); frm_vmaster.txt_evt_dte.focus(); return false; }
+	
+	if (frm_vmaster.rd_veh_type[0].checked ==false && frm_vmaster.rd_veh_type[1].checked ==false) 
+		{
+		alert("Please Select the Vehicle ");
+		frm_vmaster.rd_veh_type[0].focus();
+		return false;
+		}
+	if (frm_vmaster.rd_veh_type[1].checked && frm_vmaster.txt_veh_typ.value.length<10 )
+		{
+		alert("Please Enter the Vehicle Name and Model ");
+		frm_vmaster.txt_veh_typ.focus();
+		return false;
+		}
+	
+	
+/*	if (  frm_vmaster.rd_reas[0].checked==true || frm_vmaster.rd_reas[1].checked==true  ) 
+	{ 
+	var evt_dteT=document.getElementById("txt_evt_dte").value;
+	evt_dteT=evt_dteT.replace("-","");
+	evt_dteT=evt_dteT.replace("-","");
+	
+	 
+//	alert("evt_dteT "+evt_dteT);
+	if (evt_dteT>=20200426 && evt_dteT<=20200429 )
+		{
+		alert("Not allowed to Date between 26-Apr-2020 to 29-Apr-2020") ; frm_vmaster.txt_evt_dte.focus(); return false; 
+		}
+	}
+	
+*/
+if (frm_vmaster.txt_dte.value.length<6) { alert("Enter  Date Of Travel   ");frm_vmaster.txt_dte.focus(); return false; }
+
+/*	var dteT=document.getElementById("txt_dte").value;
+	dteT=dteT.replace("-","");
+	dteT=dteT.replace("-","");
+//	alert("dteT "+dteT);
+	if (dteT>=20200426 && dteT<=20200429 )
+		{
+		alert("Not allowed to Date between 26-Apr-2020 to 29-Apr-2020") ; frm_vmaster.txt_dte.focus(); return false; 
+		}
+
+	*/
+if ( document.getElementById("txt_taluk").value.length<5) 
+	{ alert("Please Enter Taluk Name   "); frm_vmaster.txt_taluk.focus(); return false; }
+
+if (frm_vmaster.txt_dst.value.length<5) 
+	{ alert("Please Enter District Name   ");frm_vmaster.txt_dst.focus(); return false; }
+	
+if (frm_vmaster.txt_state.value.length<5) 
+	{ alert("Please Enter State Name   ");frm_vmaster.txt_state.focus(); return false; }
+	
+	var tAddr=frm_vmaster.txt_address.value.toUpperCase().replace(" ","");
+	var tDsg=frm_vmaster.txt_dsg.value.toUpperCase().replace(" ","");
+	
+	var tVlg=frm_vmaster.txt_vlg.value.toUpperCase().replace(" ","");
+	var tTal=frm_vmaster.txt_taluk.value.toUpperCase().replace(" ","");
+	var tDst=frm_vmaster.txt_dst.value.toUpperCase().replace(" ","");
+	var tStat=frm_vmaster.txt_state.value.toUpperCase().replace(" ","");
+	
+	if ( tAddr.indexOf("BENGA")>=0   || tAddr.indexOf("KOLKATA")>=0 || tAddr.indexOf("HOWRA")>=0 )
+		{
+		alert("Entred  requested  destination  is restricted ");
+		frm_vmaster.txt_address.focus();
+		return false;
+		}
+	
+	
+	if ( tDsg.indexOf("BENGA")>=0   || tDsg.indexOf("KOLKATA")>=0 || tDsg.indexOf("HOWRA")>=0 )
+		{
+		alert("The  requested  destination  is restricted ");
+		frm_vmaster.txt_dsg.focus();
+		return false;
+		}
+	
+	if (tVlg.indexOf("BENGA")>=0  || tVlg.indexOf("KOLKATA")>=0  || tVlg.indexOf("HOWRA")>=0)
+		{
+		alert("Entred  requested  destination  is restricted ");
+		frm_vmaster.txt_vlg.focus();
+		return false;
+		}
+	
+	if (tTal.indexOf("BENGA")>=0  || tTal.indexOf("KOLKATA")>=0  || tTal.indexOf("HOWRA")>=0)
+		{
+		alert("The  requested  destination  is restricted ");
+		frm_vmaster.txt_taluk.focus();
+		return false;
+		}
+	
+	
+	if (tDst.indexOf("BENGA")>=0  || tDst.indexOf("KOLKATA")>=0  || tDst.indexOf("HOWRA")>=0)
+		{
+		alert("The  requested  destination  is restricted ");
+		frm_vmaster.txt_dst.focus();
+		return false;
+		}
+	
+	
+	if (tStat.indexOf("BENGA")>=0   || tStat.indexOf("KOLKATA")>=0  || tStat.indexOf("HOWRA")>=0)
+		{
+		alert("The  requested  destination  is restricted ");
+		frm_vmaster.txt_state.focus();
+		return false;
+		}
+	 
+	
+	
+if (frm_vmaster.txt_no_vch.value.length==0) 
+	{ alert("Please Enter Number of Vehicles    ");frm_vmaster.txt_no_vch.focus(); return false; }
+if (frm_vmaster.txt_state.value.length<5) 
+	{ alert("Please Enter State Name   ");frm_vmaster.txt_state.focus(); return false; }
+
+
+
+
+
+
+	var f1=document.getElementById("fle_reason").value;
+	var f2=document.getElementById("fle_addr_prf").value;
+	var f3=document.getElementById("fle_id_prf").value;
+	
+		f1=f1.toUpperCase();
+		f2=f2.toUpperCase();
+		f3=f3.toUpperCase();
+		
+		
+		if ( f1.lastIndexOf(".PDF") >=0 || f1.lastIndexOf(".JPG") >=0 ) { }
+		else
+			{
+			alert("File Type should be pdf or jpg ");
+			document.getElementById("fle_reason").value="";
+			document.getElementById("fle_reason").focus();
+			return false;
+			}
+	
+		if ( f2.lastIndexOf(".PDF") >=0 || f2.lastIndexOf(".JPG") >=0 ) { }
+		else
+			{
+			alert("File Type should be pdf or jpg ");
+			document.getElementById("fle_addr_prf").value="";
+			document.getElementById("fle_addr_prf").focus();
+			return false;
+			}
+
+		if ( f3.lastIndexOf(".PDF") >=0 || f3.lastIndexOf(".JPG") >=0 ) { }
+		else
+			{
+			alert("File Type should be pdf or jpg ");
+			document.getElementById("fle_id_prf").value="";
+			document.getElementById("fle_id_prf").focus();
+			return false;
+			}
+
+		if ((document.getElementById("fle_reason").files[0].size/1024/1024)>1 )
+			{
+			alert("File size should be <=1 MB ");
+			document.getElementById("fle_reason").value="";
+			document.getElementById("fle_reason").focus();
+			return false;
+			}
+		if ((document.getElementById("fle_addr_prf").files[0].size/1024/1024)>1 )
+			{
+			alert("File size should be <=1 MB ");
+			document.getElementById("fle_addr_prf").value="";
+			document.getElementById("fle_addr_prf").focus();
+			return false;
+			}
+		if ((document.getElementById("fle_id_prf").files[0].size/1024/1024)>1 )
+			{
+			alert("File size should be <=1 MB ");
+			document.getElementById("fle_id_prf").focus();
+			document.getElementById("fle_id_prf").value="";
+			return false;
+			}
+
+		
+ 
+	if (frm_vmaster.cb_seek.value==0) { alert("Please File Upload  ");frm_vmaster.cb_seek.focus(); return false; }
+
+
+	var  no_pers=document.getElementById("txt_no_pers").value;
+	if (no_pers.lenth<1 || no_pers<=0)
+		{
+		alert("Please Enter Number of Persons Travel ");
+		document.getElementById("txt_no_pers").focus();
+		return false;
+		}
+	
+	for (var  i=1;i<=no_pers;i++)
+		{
+		if ( document.getElementById("txt_bld_name1"+i).value.length<3 ) { alert("Please Enter Name"); document.getElementById("txt_bld_name1"+i).focus(); return false;}
+		if ( document.getElementById("txt_bld_age1"+i).value.length==0){  alert("Please Enter Age");document.getElementById("txt_bld_age1"+i).focus(); return false;}
+		if ( document.getElementById("txt_bld_rel1"+i).value.length<3){ alert("Please Enter Relation"); document.getElementById("txt_bld_rel1"+i).focus(); return false;}
+		if ( document.getElementById("txt_bld_id_prf1"+i).value==0	) {  alert("Please Select ID Proof");document.getElementById("txt_bld_id_prf1"+i).focus(); return false;}
+					 
+		if ( document.getElementById("txt_bld_id_prf_val1"+i).value.length<3){  alert("Please Enter ID Proof Value");document.getElementById("txt_bld_id_prf_val1"+i).focus(); return false;}
+		if ( document.getElementById("txt_bld_id_prf_fle1"+i).value.length<3){ alert("Please Select  File");document.getElementById("txt_bld_id_prf_fle1"+i).focus(); return false;}
+		
+		var bld_id_prf_file=document.getElementById("txt_bld_id_prf_fle1"+i).value;
+		bld_id_prf_file=bld_id_prf_file.toUpperCase();
+		if ( bld_id_prf_file.lastIndexOf(".PDF") >=0 || bld_id_prf_file.lastIndexOf(".JPG") >=0 ) 
+			{
+			}
+		else
+			{
+			alert("File Type should be pdf or jpg ");
+			document.getElementById("txt_bld_id_prf_fle1"+i).value="";
+			document.getElementById("txt_bld_id_prf_fle1"+i).focus();
+			return false;
+			}
+			
+		if ((document.getElementById("txt_bld_id_prf_fle1"+i).files[0].size/1024/1024)>1 )
+			{
+			alert("File size should be <=1 MB ");
+			document.getElementById("txt_bld_id_prf_fle1"+i).value="";
+			document.getElementById("fle_reason").focus();
+			return false;
+			}
+	}
+
+
+if (document.getElementById("div_mob").innerHTML.indexOf("Exist")>=0)
+	{
+	alert("Mobile Number is already Exists ");
+	return false;
+	}
+if (rd_mov[0].checked)
+	{ 
+	if (frm_vmaster.rd_tvl[0].checked==false && frm_vmaster.rd_tvl[1].checked==false  && frm_vmaster.rd_tvl[2].checked==false ) 
+	{ alert("Please Select Travel To ");frm_vmaster.rd_tvl[0].focus(); return false; }
+	}
+if (rd_mov[1].checked)
+	{ 
+	if (frm_vmaster.txt_est.value.length<5) 
+	{ alert("Please Enter Commodities   ");frm_vmaster.txt_est.focus(); return false; }
+	}
+
+if (frm_vmaster.cb_zn.value=="0") { alert("Please Select Zone ");frm_vmaster.cb_zn.focus(); return false; }
+
+if (frm_vmaster.txt_name.value.length<3  ) { alert(" Enter Name   ");frm_vmaster.txt_name.focus(); return false; }
+
+if (frm_vmaster.txt_address.value.length<10) { alert("Enter  Address   ");frm_vmaster.txt_address.focus(); return false; }
+
+
+if (frm_vmaster.rd_gend[0].checked==false && frm_vmaster.rd_gend[1].checked==false  && frm_vmaster.rd_gend[2].checked==false ) 
+{ alert("Please Select Gender ");frm_vmaster.rd_gend[0].focus(); return false; }
+
+var vAge=parseInt(frm_vmaster.txt_age.value);
+
+if (  vAge>0 && vAge<100  )
+{ } else  {  alert("Please Enter Age ");frm_vmaster.txt_age.focus(); return false; }
+
+if (frm_vmaster.txt_mob.value.length!=10) { alert("Enter  Mobile Number   ");frm_vmaster.txt_mob.focus(); return false; }
+
+var rdCk=0;
+try{
+if (frm_vmaster.rd_reas[0].checked==true)
+	rdCk=1;
+	
+if (frm_vmaster.rd_reas[1].checked==true)
+	rdCk=1;
+	
+if (frm_vmaster.rd_reas[2].checked==true)
+	rdCk=1;
+}catch(E) {
+		 if ( frm_vmaster.rd_reas.checked==true) { rdCk=1; }
+	}
+if (rdCk==0){ alert("Please Select Reason For Travel ");frm_vmaster.rd_reas[0].focus(); return false; }
+
+
+if (frm_vmaster.txt_vch_no.value.length<5 ) { alert("Enter  Vehicle  Number   ");frm_vmaster.txt_vch_no.focus(); return false; }
+
+var vNoPers=parseInt(frm_vmaster.txt_no_pers.value);
+
+if ( vNoPers>=1 ) { } else  { alert("Enter Number Of persons  ");frm_vmaster.txt_no_pers.focus(); return false; }
+
+if (frm_vmaster.cb_id_proof.value=="0") { alert("Please Select ID Proof ");frm_vmaster.cb_id_proof.focus(); return false; }
+
+if (frm_vmaster.txt_id_proof_vale.value.length==0) { alert("Please Enter  ID Proof Value ");frm_vmaster.txt_id_proof_vale.focus(); return false; }
+
+if (frm_vmaster.fle_reason.value.length<4) { alert("Please File Upload  ");frm_vmaster.fle_reason.focus(); return false; }
+
+if (frm_vmaster.fle_id_prf.value.length<4) { alert("Please File Upload  ");frm_vmaster.fle_id_prf.focus(); return false; }
+
+
+
+	
+
+frm_vmaster.submit();
+
+return true;
+}
+</script>
+		   
+</div>
+
+
+<script>
+	function fn_chk_mob(mob)
+		{
+		call_chk_mob(mob);
+		}
+</script>
+
+<script>
+	function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
+</script>
+
+<script>
+function isChars(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return true;
+    }
+    return false;
+}
+
+</script>
+
+
+<script>
+	function fn_mvt()
+		{
+		
+		if (rd_mov[0].checked)
+			{
+			tr_men.style.display="";
+			tr_est.style.display="none";		
+			}
+		else
+			{
+			tr_est.style.display="";
+			tr_men.style.display="none";
+			}
+		frm_vmaster.rd_tvl[0].checked=false ;
+		frm_vmaster.rd_tvl[1].checked=false;
+		frm_vmaster.rd_tvl[2].checked=false;
+		 
+		}
+</script>
+<script>
+	fn_mvt();
+</script>
+
+<script>
+	function fn_add_row()
+		{
+		var no_row=frm_vmaster.txt_no_pers.value;
+		 count = "1";
+		
+		if (rd_seat_cap[0].checked )
+			{
+			if (no_row>3)
+				{
+				alert("Seating Capacity is not allowed more than 3 persons");
+				frm_vmaster.txt_no_pers.focus();
+				frm_vmaster.txt_no_pers.value=3;
+				return false;
+				}
+			}
+		
+		if (rd_seat_cap[1].checked )
+			{
+			if (no_row>4)
+				{
+				alert("Seating Capacity is not allowed more than 4 persons");
+				frm_vmaster.txt_no_pers.focus();
+				frm_vmaster.txt_no_pers.value=4;
+				return false;
+				}
+			}
+		
+		while (true)
+			{
+			var rC= document.getElementById("tbl_rels").rows.length;		
+			if (rC ==1)
+				{
+				break;
+				}
+			document.getElementById("tbl_rels").deleteRow(1);
+			}
+				
+		
+		
+		
+		if (no_row==1 && rd_veh_type[0].checked)
+			{
+			//return false;
+			}
+		if (no_row.length>0)
+			{
+			if (no_row>10)
+				{
+				alert("Maximum Allowed Persons 10");
+				frm_vmaster.txt_no_pers.value="";
+				frm_vmaster.txt_no_pers.focus();
+				return false;
+				}
+			//alert(no_row);
+			 
+			 document.getElementById("tbl_rels").innerHtml=" " ;
+			
+			 for (i=1;i<=no_row;i++)
+				{
+				fn_add_rows();
+				}
+			}
+		}
+</script>
+
+<script>
+	function fn_add_rows( )
+{
+	 
+		var arIndex3 = ["i", "ii", "iii","iv","v","vi","vii","viii","ix","x"];
+		var tbody = document.getElementById("tbl_rels").getElementsByTagName("TBODY")[0];
+		var row = document.createElement("TR");
+		var rowCount = document.getElementById("tbl_rels").rows.length;
+		//alert(rowCount);
+		var vCtrlObj = null;
+		
+		var td1 = document.createElement("TD")
+	
+		var strHtml1 = ""+ arIndex3[Number(rowCount)-1] +")";
+		td1.innerHTML = strHtml1.replace(/!count!/g,count);
+	
+		var td2 = document.createElement("TD")
+		var strHtml2 = "<input type='text' id='txt_bld_name1"+ rowCount +"' NAME='txt_bld_name1"+ rowCount +"' maxlength='100'  onKeyPress='return isSpecialChrs()' >";
+		
+		td2.innerHTML = strHtml2.replace(/!count!/g,count);
+		var td3 = document.createElement("TD")
+		var strHtml3 = "<INPUT TYPE='text' NAME='txt_bld_age1"+ rowCount +"' id='txt_bld_age1"+ rowCount +"' maxlength='3'  onKeyPress='return isNumber(event)'> ";
+		td3.innerHTML = strHtml3.replace(/!count!/g,count);
+		// create table cell 4
+		var td4 = document.createElement("TD")
+		var strHtml4 ="<input NAME=\"txt_bld_rel1"+rowCount+"\" id=\"txt_bld_rel1"+rowCount+"\" maxlength='50'   onKeyPress='return isSpecialChrs()' >";
+		td4.innerHTML = strHtml4.replace(/!count!/g,count);
+		// create table cell 5
+		var td5 = document.createElement("TD")
+		var strHtml5 = "<select TYPE='text' NAME=\"txt_bld_id_prf1"+rowCount+"\"  id=\"txt_bld_id_prf1"+rowCount+"\"    ><option value='0'>Select</option> <option value='1' >ADHAR</option> <option value='2' >PAN CARD</option></select>";
+		
+		td5.innerHTML = strHtml5.replace(/!count!/g,count);
+
+
+		var td6 = document.createElement("TD")
+		var strHtml6 = "<INPUT TYPE='text' NAME=\"txt_bld_id_prf_val1"+rowCount+"\"  id=\"txt_bld_id_prf_val1"+rowCount+"\" maxlength='15'   onKeyPress='return isSpecialChrs()' >";
+		
+		td6.innerHTML = strHtml6.replace(/!count!/g,count);
+
+		var td7 = document.createElement("TD")
+		var strHtml7 = "<INPUT TYPE='file' NAME=\"txt_bld_id_prf_fle1"+rowCount+"\"   accept='application/pdf' id=\"txt_bld_id_prf_fle1"+rowCount+"\" maxlength='15'  >";
+		
+		td7.innerHTML = strHtml7.replace(/!count!/g,count);
+
+		
+		row.appendChild(td1);
+		row.appendChild(td2);
+		row.appendChild(td3);
+		row.appendChild(td4);
+		row.appendChild(td5);
+		row.appendChild(td6);
+		row.appendChild(td7);
+		  
+		count = parseInt(count) + 1;
+		tbody.appendChild(row);
+}  
+  
+var count = "1";
+</script>
+
+
+<script>
+	function fn_chk_dte()
+		{
+		var sMax="2020-04-28";
+		var sMin="2020-04-28";
+		frm_vmaster.txt_evt_dte.value=sMax;
+		
+		if (frm_vmaster.rd_reas[0].checked==true)
+			{
+			frm_vmaster.txt_evt_dte.max="2020-04-28";
+			frm_vmaster.txt_evt_dte.min="2020-01-01";
+			}
+			
+		if (frm_vmaster.rd_reas[1].checked==true)
+			{
+			frm_vmaster.txt_evt_dte.min="2020-04-28";
+			frm_vmaster.txt_evt_dte.max=null;
+			}		
+			
+		if (frm_vmaster.rd_reas[2].checked==true)
+			{
+			frm_vmaster.txt_evt_dte.min="2020-04-28";
+			frm_vmaster.txt_evt_dte.max=null;
+			frm_vmaster.txt_evt_dte.value=null;
+			}		
+		}
+		
+</script>
+
+<script>
+	function isSpecialChrs(evt) {
+		 
+	    evt = (evt) ? evt : window.event;
+    	var charCode = (evt.which) ? evt.which : evt.keyCode;
+		//alert(charCode);
+		switch(charCode)
+			{
+		 case 38:return false;
+		 case 39:return false;
+		 case 35:return false;
+		 case 59:return false;
+		 case 96:return false;
+		 case 40:return false;
+		 case 41:return false;
+		 case 126:return false;
+		 case 34:return false;
+		 case 93:return false;
+		 case 91:return false;
+		 case 125:return false;
+		 case 123:return false;
+		 case 37:return false;
+		 case 36:return false;
+		 case 94:return false;
+		 case 95:return false;
+		 case 92:return false;
+		 case 124:return false;
+		 case 47:return false;
+		 case 58:return false;
+		 case 60:return false;
+		 case 61:return false;
+		 case 62:return false;
+		 case 63:return false;
+		 case 43:return false;
+		 default: return true;
+		 }
+	    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+    	    return true;
+	    }
+    	return false;
+}
+//$("input,textarea").onkeypress(isSpecialChrs());
+</script>
+
+
+<script>
+	function ch_date_val()
+		{
+		 
+		/*if ( document.getElementById("txt_evt_dte").value.length<6 && ( frm_vmaster.rd_reas[0].checked==true || frm_vmaster.rd_reas[1].checked==true)  ) 
+			{ //alert("Please Enter Marriage / Death Date    "); 
+			frm_vmaster.txt_evt_dte.focus(); return false; }
+			
+		if (  frm_vmaster.rd_reas[0].checked==true || frm_vmaster.rd_reas[1].checked==true  ) 
+			{ 
+			var evt_dteT=document.getElementById("txt_evt_dte").value;
+			evt_dteT=evt_dteT.replace("-","");
+			evt_dteT=evt_dteT.replace("-","");
+			
+			 
+		//	alert("evt_dteT "+evt_dteT);
+			if (evt_dteT>=20200426 && evt_dteT<=20200429 )
+				{
+				alert("Not allowed to Date between 26-Apr-2020 to 29-Apr-2020") ; frm_vmaster.txt_evt_dte.value=""; frm_vmaster.txt_evt_dte.focus(); return false; 
+				}
+			}
+			
+		if (  document.getElementById("txt_evt_dte").value.length>6  ) 
+			{ 
+			var evt_dteT=document.getElementById("txt_evt_dte").value;
+			evt_dteT=evt_dteT.replace("-","");
+			evt_dteT=evt_dteT.replace("-","");
+			
+			 
+		//	alert("evt_dteT "+evt_dteT);
+			if (evt_dteT>=20200426 && evt_dteT<=20200429 )
+				{
+				alert("Not allowed to Date between 26-Apr-2020 to 29-Apr-2020") ; frm_vmaster.txt_evt_dte.value="";frm_vmaster.txt_evt_dte.focus(); return false; 
+				}
+			}
+			
+		
+		
+		if (frm_vmaster.txt_dte.value.length<6) {// alert("Enter  Date Of Travel   ");
+		frm_vmaster.txt_dte.focus(); return false; }
+		
+			var dteT=document.getElementById("txt_dte").value;
+			dteT=dteT.replace("-","");
+			dteT=dteT.replace("-","");
+		//	alert("dteT "+dteT);
+			if (dteT>=20200426 && dteT<=20200429 )
+				{
+				alert("Not allowed to Date between 26-Apr-2020 to 29-Apr-2020") ;  frm_vmaster.txt_dte.value="";frm_vmaster.txt_dte.focus(); return false; 
+				}
+		
+			*/
+				return true;;
+			}
+</script>
+<script>
+	function fn_rd_veh_type()
+		{
+		var rowCount = document.getElementById("tbl_rels").rows.length;		
+		while (true)
+			{
+			rowCount = document.getElementById("tbl_rels").rows.length;		
+			if (rowCount ==1)
+				{
+				break;
+				}
+			document.getElementById("tbl_rels").deleteRow(1);
+			}
+		
+		
+		
+		document.getElementById("txt_veh_typ").disabled = true;
+			document.getElementById("txt_no_pers").readOnly=true;
+			document.getElementById("txt_no_pers").value="1";
+
+			rd_seat_cap[0].disabled = true;
+			rd_seat_cap[1].disabled = true;
+			rd_seat_cap[0].checked = false;
+			rd_seat_cap[1].checked = false;
+
+
+		if (rd_veh_type[1].checked==true)
+			{
+			
+			document.getElementById("txt_no_pers").value="";
+			document.getElementById("txt_no_pers").readOnly=false;
+			document.getElementById("txt_veh_typ").disabled = false;
+			rd_seat_cap[0].disabled = false;
+			rd_seat_cap[1].disabled = false;
+			rd_seat_cap[0].checked = true;
+			}
+		
+		}
+</script>
+
+<script>
+	function fn_chk_vcl_no()
+		{
+		if (rd_veh_type[0].checked)
+			{
+			fn_add_rows();
+
+			}
+		}
+</script>
+
+
+
+
+ 
+ <!-- Main Footer -->
+      <section class="section background-dark">
+        <div class="line">
+          <div class="margin">
+            <!-- Collumn 1 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Our Mission<br>எமது நோக்கம்</h4>
+              <p class="text-size-20"><em>"To control Corona Virus, To save people"<br>"கொரோனா தொற்றைக் கட்டுப்படுத்தி, மக்களைக் காப்பாற்றுதல்"</em><p>
+                            
+              <div class="line">
+                <h4 class="text-uppercase text-strong margin-top-30">Our Vision<br>எமது பார்வை</h4>
+                <div class="margin">
+                  <div class="s-12 m-12 l-4 margin-m-bottom">
+                    <a class="image-hover-zoom" href="/"><img src="img/blog-04.png" alt=""></a>
+                  </div>
+                  <div class="s-12 m-12 l-8 margin-m-bottom">
+                    <p>To rebuild Economy, To build Nation Stronger than ever before<br>பொருளாதாரத்தை மீண்டும் கட்டியெழுப்பி, வலுவான தேசத்தை உருவாக்குதல்</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Collumn 2 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Contact Collector Office</h4><br>
+			                <h4 class="text-uppercase text-medium">மாவட்ட ஆட்சியர் அலுவலகத்தைத் தொடர்பு கொள்ள</h4><br>
+
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-mail text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="/" class="text-primary-hover"><b>மின்னஞ்சல் E-mail:</b> contact@cap.com</a></p>
+                </div>
+              </div><br>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-smartphone text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><b>அலைபேசி Phone:</b>9965560256</p>
+                </div>
+              </div><br>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-twitter text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="https://twitter.com/TPRDtCollector?s=09" class="text-primary-hover"><b> சுட்டுரை Twitter</b></a></p>
+                </div>
+              </div><br>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-facebook text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11">
+                  <p><a href="https://m.facebook.com/TPRDtCollector/" class="text-primary-hover"><b>முகநூல் Facebook</b></a></p>
+                </div>
+              </div>
+            </div><br>
+           
+            <!-- Collumn 3 -->
+            <div class="s-12 m-12 l-4">
+              <h4 class="text-uppercase text-strong">Join As A Volunteer</h4><br>
+              <h4 class="text-uppercase text-medium">தன்னார்வலராக சேர</h4><br>
+              <form action="pro.php" method="post" class="customform text-white">
+                <div class="line">
+                  <div class="margin">
+				   <div class="s-12">
+				  <label for="aadhar">ஆதார் எண் AADHAR ID:</label>
+				  <input type="text" name="aadhar" id="txtAadhar" onblur="AadharValidate()"  placeholder="Your AADHAR No" />
+                </div>
+                    <div class="s-12 m-12 l-6">
+					<label for="email">மின்னஞ்சல் E-mail:</label>	
+                      <input name="email" class="required email border-radius" placeholder="Your e-mail" title="Your e-mail" type="text" />
+                    </div>
+             
+                  </div>
+                </div>
+                <div class="s-12">
+				  <label for="name">பெயர் Name:</label>
+                      <input name="name" class="name border-radius" placeholder="Your name" title="Your name" type="text" />
+                </div>
+				
+				<script type="text/javascript">
+					function AadharValidate() {
+						var aadhar = document.getElementById("txtAadhar").value;
+						var adharcardTwelveDigit = /^\d{12}$/;
+						var adharSixteenDigit = /^\d{16}$/;
+						if (aadhar != '') {
+							if (aadhar.match(adharcardTwelveDigit)) {
+							
+								return true;
+							}
+							else if (aadhar.match(adharSixteenDigit)) {
+							
+								return true;
+							}
+							else {
+								alert("Enter valid Aadhar Number");
+								return false;
+							}
+						}
+					}
+				</script>
+								
+				 <input type="hidden" name="form_submitted" value="0" />
+				 
+                <div class="s-12"><button class="submit-form button background-primary border-radius text-white" " type="submit">Submit Button</button></div> <br>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      <!-- Bottom Footer -->
+    </footer> 
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>   
+   </body>
+</html>

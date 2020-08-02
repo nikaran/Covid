@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid19-CAP</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/validation.js"></script> 
+  </head>  
+    
+  
+  <body class="size-1140">
+
+      
+      <!-- Top Navigation -->
+      <nav class="background-white background-primary-hightlight">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="index.html" class="logo"><img src="img/logo-free.png" alt=""></a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li><a href="index.html">Home</a></li>
+              <li><a>Services</a>
+                <ul>
+                  <li><a href="gr.html">Groceries Delivery</a>
+                  </li>
+                  <li><a href="medi.html">Medical Assistance</a></li>
+                </ul>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+      <!-- Content -->
+      <article>
+        <header class="section background-primary text-center">
+            <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Educational Assistance & <br>Carreer Guidance</h1>
+        </header>
+        <div class="section background-white"> 
+          <div class="line">
+            <div class="margin">
+              
+              <!-- Contact Form -->
+			 
+              <div class="s-12 m-12 l-6">
+                <h2 class="text-uppercase text-strong margin-bottom-30">Contact Us</h2>
+                <form class="customform">
+                  <div class="line">
+                    <div class="margin">
+                      <div class="s-12 m-12 l-6">
+                        <input name="name" class="name border-radius" placeholder="Your name" title="Your name" type="text" />
+                      </div>
+					  <div class="s-12 m-12 l-6">
+                        <input name="email" class="required email border-radius" placeholder="Your e-mail" title="Your e-mail" type="text" />
+                      </div>
+                    </div>
+                  </div>
+				   <div class="s-12"> 
+                    <input name="department" class="subject border-radius" placeholder="Department" title="Department" type="text" />
+                  </div>
+				   <div class="s-12"> 
+                    <input name="yos" class="subject border-radius" placeholder="Year Of Study" title="Yos" type="text" />
+                  </div>
+				   
+					<label for="checkbox">Do you need Educational Assistance Or Carreer Guidance?<br><br>
+					  <input type="checkbox" id="yes" name="yes" onclick="myFunction()" value="Yes">
+						  <label for="Yes">Educational Assistance</label><br>
+						  <input type="checkbox" id="No" name="No" onclick="myFunction1()" value="No">
+						  <label for="vehicle2">Carreer Guidance</label><br></label>
+						<div class="s-12">
+                    <textarea name="educational_assistance" id="text" style="display:none" class="required message border-radius" placeholder="Mention the Area in which you want to clarify" rows="1"></textarea>
+					</div>
+					<div class="s-12">
+                    <textarea name="educational_assistance1" id="text1" style="display:none" class="required message border-radius" placeholder="Clear explanation of your need" rows="3"></textarea>
+					</div>
+					<div class="s-12">
+                    <textarea name="educational_assistance11" id="text3" style="display:none" class="required message border-radius" placeholder="Field of Intrest" rows="3"></textarea>
+					</div>
+					<div class="s-12">
+                    <textarea name="educational_assistance111" id="text4" style="display:none" class="required message border-radius" placeholder="Experince of your Job" rows="3"></textarea>
+					</div>
+				
+							<script>
+						     function myFunction() {
+								
+								  var checkBox = document.getElementById("yes");
+								  var text = document.getElementById("text");
+								  var text1 = document.getElementById("text1");
+								  if (checkBox.checked == true){
+								    text3.style.display = "none";
+									text4.style.display = "none";
+									text.style.display = "block";
+									text1.style.display = "block";
+								  } else {
+									 text.style.display = "none";
+									 text1.style.display = "none";
+								  }
+								   var x = document.getElementById("No");
+								  x.checked = false;
+								}
+								function myFunction1() {
+								  var checkBox = document.getElementById("No");
+								  var x = document.getElementById("yes");
+								  x.checked = false;
+								  
+								  var text3 = document.getElementById("text3");
+								  var text4 = document.getElementById("text4");
+								   if (checkBox.checked == true){
+								    text.style.display = "none";
+									text1.style.display = "none";
+									text3.style.display = "block";
+									text4.style.display = "block";}
+									else {
+									 text3.style.display = "none";
+									 text4.style.display = "none";}
+								}
+								
+							</script>
+				  
+				    <div class="s-12"> 
+                    <input name="contact_no" class="subject border-radius" placeholder="Contact No" title="Contact No" type="text" />
+                  </div>
+                  <div class="s-12 m-12 l-4"><a class="button border-radius background-primary text-size-12 text-white text-strong" href="so.html">Submit</a></div> 
+                </form>
+              </div>  
+            </div>  
+
+          </div> 
+        </div> 
+      </article>
+ <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "35f3329d-6b61-4ff4-aac7-cff2c6620e6b", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "b91940c2-6c30-430c-b1f4-8de689d9a245", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+    <!-- Main Footer -->
+      <section class="section background-dark">
+        <div class="line">
+          <div class="margin">
+            <!-- Collumn 1 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Our Mission<br>எமது நோக்கம்</h4>
+              <p class="text-size-20"><em>"To control Corona Virus, To save people"<br>"கொரோனா தொற்றைக் கட்டுப்படுத்தி, மக்களைக் காப்பாற்றுதல்"</em><p>
+                            
+              <div class="line">
+                <h4 class="text-uppercase text-strong margin-top-30">Our Vision<br>எமது பார்வை</h4>
+                <div class="margin">
+                  <div class="s-12 m-12 l-4 margin-m-bottom">
+                    <a class="image-hover-zoom" href="/"><img src="img/blog-04.png" alt=""></a>
+                  </div>
+                  <div class="s-12 m-12 l-8 margin-m-bottom">
+                    <p>To rebuild Economy, To build Nation Stronger than ever before<br>பொருளாதாரத்தை மீண்டும் கட்டியெழுப்பி, வலுவான தேசத்தை உருவாக்குதல்</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Collumn 2 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-2x">
+              <h4 class="text-uppercase text-strong">Contact Collector Office</h4><br>
+			                <h4 class="text-uppercase text-medium">மாவட்ட ஆட்சியர் அலுவலகத்தைத் தொடர்பு கொள்ள</h4><br>
+
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-mail text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="/" class="text-primary-hover"><b>மின்னஞ்சல் E-mail:</b> contact@cap.com</a></p>
+                </div>
+              </div><br>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-smartphone text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><b>அலைபேசி Phone:</b>9965560256</p>
+                </div>
+              </div><br>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-twitter text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11 margin-bottom-10">
+                  <p><a href="https://twitter.com/TPRDtCollector?s=09" class="text-primary-hover"><b> சுட்டுரை Twitter</b></a></p>
+                </div>
+              </div><br>
+              <div class="line">
+                <div class="s-1 m-1 l-1 text-center">
+                  <i class="icon-facebook text-primary text-size-12"></i>
+                </div>
+                <div class="s-11 m-11 l-11">
+                  <p><a href="https://m.facebook.com/TPRDtCollector/" class="text-primary-hover"><b>முகநூல் Facebook</b></a></p>
+                </div>
+              </div>
+            </div><br>
+           
+            <!-- Collumn 3 -->
+            <div class="s-12 m-12 l-4">
+              <h4 class="text-uppercase text-strong">Join As A Volunteer</h4><br>
+              <h4 class="text-uppercase text-medium">தன்னார்வலராக சேர</h4><br>
+              <form action="pro.php" method="post" class="customform text-white">
+                <div class="line">
+                  <div class="margin">
+				   <div class="s-12">
+				  <label for="aadhar">ஆதார் எண் AADHAR ID:</label>
+				  <input type="text" name="aadhar" id="txtAadhar" onblur="AadharValidate()"  placeholder="Your AADHAR No" />
+                </div>
+                    <div class="s-12 m-12 l-6">
+					<label for="email">மின்னஞ்சல் E-mail:</label>	
+                      <input name="email" class="required email border-radius" placeholder="Your e-mail" title="Your e-mail" type="text" />
+                    </div>
+             
+                  </div>
+                </div>
+                <div class="s-12">
+				  <label for="name">பெயர் Name:</label>
+                      <input name="name" class="name border-radius" placeholder="Your name" title="Your name" type="text" />
+                </div>
+				
+				<script type="text/javascript">
+					function AadharValidate() {
+						var aadhar = document.getElementById("txtAadhar").value;
+						var adharcardTwelveDigit = /^\d{12}$/;
+						var adharSixteenDigit = /^\d{16}$/;
+						if (aadhar != '') {
+							if (aadhar.match(adharcardTwelveDigit)) {
+							
+								return true;
+							}
+							else if (aadhar.match(adharSixteenDigit)) {
+							
+								return true;
+							}
+							else {
+								alert("Enter valid Aadhar Number");
+								return false;
+							}
+						}
+					}
+				</script>
+								
+				 <input type="hidden" name="form_submitted" value="0" />
+				 
+                <div class="s-12"><button class="submit-form button background-primary border-radius text-white" " type="submit">Submit Button</button></div> <br>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      <!-- Bottom Footer -->
+    </footer> 
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>   
+   </body>
+</html>
